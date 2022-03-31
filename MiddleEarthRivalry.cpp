@@ -59,15 +59,12 @@ int main()
             default:
                 std::cout << "Please answer with the number of one of given options" << std::endl;
             }
-
             break;
         case 'n':
             is_settings_complete = true; break;
         default:
             std::cout << "Please, answer with 'y' or 'n' symbol" << std::endl;
         }
-
-
     }
 
     BattleHandler battle(is_wizard_included, light_infantry_amount, light_cavalry_amount, darkness_infantry_amount, darkness_cavalry_amount);

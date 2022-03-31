@@ -98,7 +98,17 @@ void BattleHandler::Execute()
 
     int const light_total_last = m_army_light.m_infantry.size() + m_army_light.m_cavalry.size();
     int const darkness_total_last = m_army_darkness.m_infantry.size() + m_army_darkness.m_cavalry.size();
-    if (light_total_last > darkness_total_last) { std::cout << "Army of light won!"; }
-    else if (light_total_last < darkness_total_last) { std::cout << "Army of darkness won!"; }
-    else { std::cout << "Draw!"; }
+
+    if (light_total_last > darkness_total_last)
+    {
+        std::cout << "Army of light won!";
+    }
+    else if (light_total_last < darkness_total_last)
+    {
+        std::cout << "Army of darkness won!";
+    }
+    else
+    {
+        std::cout << "Draw!";
+    }
 }
