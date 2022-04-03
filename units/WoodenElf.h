@@ -6,5 +6,9 @@
 class WoodenElf : public BaseUnit
 {
 public:
-    WoodenElf(){ m_power = 6; }
+    WoodenElf()
+    {
+        m_power = 6;
+        m_type = Type::INFANTRY;
+    }
 };

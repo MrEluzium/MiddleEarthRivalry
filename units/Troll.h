@@ -6,5 +6,9 @@
 class Troll : public BaseUnit
 {
 public:
-    Troll(){ m_power = Randomized::Get(11, 15); }
+    Troll()
+    {
+        m_power = Randomized::Get(11, 15);
+        m_type = Type::INFANTRY;
+    }
 };

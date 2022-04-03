@@ -6,5 +6,9 @@
 class Orc : public BaseUnit
 {
 public:
-    Orc(){ m_power = Randomized::Get(8, 10); }
+    Orc()
+    {
+        m_power = Randomized::Get(8, 10);
+        m_type = Type::CAVALRY;
+    }
 };

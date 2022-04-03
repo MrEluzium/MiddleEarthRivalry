@@ -6,5 +6,9 @@
 class Rohirrim : public BaseUnit
 {
 public:
-    Rohirrim(){ m_power = Randomized::Get(11, 13); }
+    Rohirrim()
+    {
+        m_power = Randomized::Get(11, 13);
+        m_type = Type::CAVALRY;
+    }
 };

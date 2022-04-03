@@ -6,5 +6,9 @@
 class UrukHai : public BaseUnit
 {
 public:
-    UrukHai(){ m_power = Randomized::Get(10, 12); }
+    UrukHai()
+    {
+        m_power = Randomized::Get(10, 12);
+        m_type = Type::INFANTRY;
+    }
 };

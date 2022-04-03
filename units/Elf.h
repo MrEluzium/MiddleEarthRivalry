@@ -6,5 +6,9 @@
 class Elf : public BaseUnit
 {
 public:
-    Elf(){ m_power = Randomized::Get(4, 7); }
+    Elf()
+    {
+        m_power = Randomized::Get(4, 7);
+        m_type = Type::INFANTRY;
+    }
 };
